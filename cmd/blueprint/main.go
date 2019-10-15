@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/config"
+
+	"github.com/marceloaguero/go-project-blueprint/cmd/blueprint/config"
 )
 
 func main() {

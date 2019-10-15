@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MartinHeinz/go-project-blueprint/cmd/blueprint/config"
+	"github.com/marceloaguero/go-project-blueprint/cmd/blueprint/config"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

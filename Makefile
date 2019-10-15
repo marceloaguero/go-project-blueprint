@@ -4,7 +4,7 @@
 BIN := blueprint
 
 # Where to push the docker image.
-REGISTRY ?= docker.pkg.github.com/martinheinz/go-project-blueprint
+REGISTRY ?= marceloaguero/go-project-blueprint
 
 # This version-strategy uses git tags to set the version string
 VERSION := $(shell git describe --tags --always --dirty)
@@ -29,7 +29,7 @@ BASEIMAGE ?= gcr.io/distroless/static
 IMAGE := $(REGISTRY)/$(BIN)
 TAG := $(VERSION)__$(OS)_$(ARCH)
 
-BUILD_IMAGE ?= golang:1.12-alpine
+BUILD_IMAGE ?= golang:1.13-alpine
 # Tweaked image used for test runs (see `test.Dockerfile`)
 TEST_IMAGE ?= martinheinz/golang:1.12-alpine-test
 
